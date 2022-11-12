@@ -1,0 +1,68 @@
+<!DOCTYPE >
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PvZ Survival</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+	<link rel="manifest" href="./manifest.json"/>
+	<script>
+		if ('serviceWorker' in navigator) {
+		  navigator.serviceWorker.register('./sw.js')
+			 .then(function () {console.log('service worker registered');})
+			 .catch(function () {console.log('service worker failed'); });
+		}
+	  </script>
+    </head>
+	<body>
+		
+		<div class="fundo" id="fundo">
+			<div class="tiros"></div>
+		<div class="area" id="area">
+		
+		<div id="div2">
+			<img src="../Imagens/enemy3.png" alt="enemy">
+		</div>
+		<div id="div1">
+			<img src="../Imagens/enemy3.png" alt="enemy">
+		</div>
+
+		<div class="player"><img src="../Imagens/player2.png" alt="player"></div>
+		
+		</div>
+	</div> 
+
+	<div class="pontos">Pontuação: 10</div>
+
+		<div class="painel">
+			
+				
+				<!--
+				<button type="button"  id="para">Parar cursor 1</button>
+				<button type="button"  id="para2" >Parar cursor 2</button><hr>
+				-->
+				<div class="botoes2">
+				<button type="button" id="atirar"><img src="../Imagens/ervilha.png" alt="bala"></button>
+				<button type="button"  id="acima"><img src="../Imagens/Up.png" alt="cima"></button><br>
+				</div>
+				<!--
+				<div class="botoes">
+				<button type="button"  id="esquerda"><img src="../Imagens/Left.png" alt="esquerda"></button>
+				<button type="button"  id="direita" ><img src="../Imagens/Right.png" alt="direita"></button><br>
+				</div>
+				-->
+				<button type="button"  id="baixo" ><img src="../Imagens/Down.png" alt="baixo"></button>
+				
+				<!--
+				<button type="button"  id="alturaMais" >+Altura</button>
+				<button type="button"  id="alturaMenos" >-Altura</button><hr>
+				<button type="button"  id="larguraMais" >+Largura</button>
+				<button type="button"  id="larguraMenos" >-Largura</button><hr>
+				<button type="button"  id="cor">Muda a cor</button>
+				-->
+		</div>
+		
+		
+		<script src="../JS/JogoJS.js"></script>
+	</body>
+</html>
