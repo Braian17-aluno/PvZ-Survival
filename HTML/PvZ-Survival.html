@@ -9,8 +9,8 @@
 	<script>
 		if ('serviceWorker' in navigator) {
 		  navigator.serviceWorker.register('./sw.js')
-			 .then(function () {console.log('service worker registered');})
-			 .catch(function () {console.log('service worker failed'); });
+			 .then(function(){console.log('service worker registered');})
+			 .catch(function(){console.log('service worker failed'); });
 		}
 	  </script>
     </head>
@@ -31,35 +31,28 @@
 		
 		</div>
 	</div> 
-
+	<button class="botaoStart" id="botaoS">Clique aqui para começar o jogo.</button>
+	<button class="botaoReplay" id="botaoR"></button>
+	<div class="painelAlt">
 	<div class="pontos">Pontuação: 10</div>
+	<div class="localS">Total de inimigos derrotados: 209</div>
+	</div>
+		<button class="Inst">
+			Use as teclas 'w' para se mexer pra cima e 's' para se mexer pra baixo (ou use as flechas).
+			 Use a tecla 'q' (ou aperte o botão das ervilhas) para COMEÇAR a atirar. Você não vai parar de atirar depois disso.
+			 Quando você acertar um inimigo você ganha dois pontos, com 20 pontos você ganha.
+			 Se um inimigo tocar no fundo do gramado você perde um ponto, com 0 pontos você perde.
+			 Se um inimigo te tocar você perde instantaneamente. (Clique nessa janela para fecha-lá)
+		</button>
+	
+
 
 		<div class="painel">
-			
-				
-				<!--
-				<button type="button"  id="para">Parar cursor 1</button>
-				<button type="button"  id="para2" >Parar cursor 2</button><hr>
-				-->
 				<div class="botoes2">
 				<button type="button" id="atirar"><img src="../Imagens/ervilha.png" alt="bala"></button>
 				<button type="button"  id="acima"><img src="../Imagens/Up.png" alt="cima"></button><br>
 				</div>
-				<!--
-				<div class="botoes">
-				<button type="button"  id="esquerda"><img src="../Imagens/Left.png" alt="esquerda"></button>
-				<button type="button"  id="direita" ><img src="../Imagens/Right.png" alt="direita"></button><br>
-				</div>
-				-->
 				<button type="button"  id="baixo" ><img src="../Imagens/Down.png" alt="baixo"></button>
-				
-				<!--
-				<button type="button"  id="alturaMais" >+Altura</button>
-				<button type="button"  id="alturaMenos" >-Altura</button><hr>
-				<button type="button"  id="larguraMais" >+Largura</button>
-				<button type="button"  id="larguraMenos" >-Largura</button><hr>
-				<button type="button"  id="cor">Muda a cor</button>
-				-->
 		</div>
 		
 		
