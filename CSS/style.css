@@ -6,7 +6,7 @@ body {
 }
 .fundo {
     width: 98vw;
-    height: 40vw;
+    height: 30vw;
     background-color: black;
     border: 5px solid rgb(13, 236, 13);
     border-left: 5px solid green;
@@ -16,7 +16,7 @@ body {
 }
 .area {
     width: 6vw;
-    height: 60vw;
+    height: 30vw;
     background-color: black;
     border-right: 5px solid rgb(13, 236, 13);
     text-align: center;
@@ -41,6 +41,28 @@ body {
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
+.botaoStart{
+    border: 2px outset green;
+    background-color: lightgreen;
+    height: 4vw;
+    margin-left: 25px;
+    width: 96vw;
+    font-size: x-large;
+}
+.botaoReplay, .Sumir{
+    display: none;
+}
+.aparece{
+    display: block;
+    border: 2px outset green;
+    background-color: lightgreen;
+    height: 4vw;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 96vw;
+    font-size: x-large;
+}
 
 #div2 {
     color: white;
@@ -49,17 +71,15 @@ body {
     left: 88vw; 
     width: 7vw; 
     height: 6vw; 
-    
     text-align: center;
 }
 #div1 {
     color: white;
     position: absolute;
-    top: 25vw;
+    top: 20vw;
     left: 88vw; 
     width: 7vw; 
     height: 6vw; 
-    
     text-align: center;
 }
 .player {
@@ -68,15 +88,44 @@ body {
     height: 5vw;
     width: 6vw;
 }
-.inimigo {
-    background-size: contain;
+.painelAlt{
+    display: flex;
+    flex-direction: row;
+}
+
+.localS{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px outset green;
+    background-color: rgb(31, 182, 31);
+    width: 20vw;
+    height: 5vw;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 1vw;
+}
+.Inst{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px outset green;
+    background-color: rgb(31, 182, 31);
+    width: 98.5vw;
+    height: auto;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    font-size: large;
 }
 .pontos {
     display: flex;
-    border: 5px solid rgb(12, 236, 12);
-    width: 96.5vw;
-    height:10vw;
+    border: 5px outset green;
+    width: 80vw;
+    height:5vw;
     margin: 5px;
+    margin-left: 10px;
     font-size: xx-large;
     padding: 5px;
     background-color: rgb(12, 236, 12);
@@ -120,8 +169,28 @@ img {
         height: 40vw;
         align-items: center;
     }
+    .painelAlt {
+        flex-wrap: nowrap;
+    }
     .pontos {
-        width: 90vw;
+        width: 60vw;
+        height: 10vw;
+    }
+    .localS{
+        width: 30vw;
+        height: 10vw;
+    }
+    .Inst{
+        width: 96vw;
+        height: auto;
+    }
+    .botaoStart{
+        width: 89vw;
+        height: 10vw;
+    }
+    .aparece{
+        width: 89vw;
+        height: 15vw;
     }
     .fundo{
         width: auto;
